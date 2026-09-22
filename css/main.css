@@ -1,0 +1,52 @@
+/* Just practice  
+1) --- Global variable
+2) --- Layout
+*/
+
+
+
+/* --- Global Variable --- */
+:root {
+    --color-bg-body: rgb(0, 0, 0);
+    --color-bg-section: rgb(60, 21, 168);
+    --color-font-body: rgb(252, 37, 180);
+    --img-board: url('../img/water.webp');
+}
+#zen-explanation{--pos-top: 170px; --pos-left:350px; --front-img: url(../img/newspaper2.jpg);}
+#zen-participation{--pos-top: 170px; --pos-left:650px; --front-img: url(../img/newspaper2.jpg);}
+#zen-summary{--pos-top: 30px; --pos-left:650px; --front-img: url(../img/newspaper2.jpg);}
+#zen-preamble{--pos-top: 170px; --pos-left:950px; --front-img: url(../img/newspaper2.jpg);}
+#zen-benefits{--pos-top: 2px; --pos-left:330px; --front-img: url(../img/newspaper2.jpg);}
+#zen-requirements{--pos-top: 170px; --pos-left:650px; --front-img: url(../img/newspaper2.jpg);}
+
+
+body {
+    background-color: var(--color-bg-body);
+    color: var(--color-bg-section);
+}
+
+.page-wrapper{
+    background-image: var(--img-board) ;
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    top: 10%;
+}
+
+abbr{
+    position: relative;
+    font-size: larger;
+    top: -10%;
+}
+
+article{
+    position: absolute;
+    top: var(--pos-top);
+    left: var(--pos-left);
+    width: 300px;
+    height: 40vh;
+}
+
+footer{
+    display: none;
+}
